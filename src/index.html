@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Generate Video Sitemap</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <section class="bcls-section">
+    <h2 id="Sitemap_generator">Video Sitemap Generator</h2>
+  
+    <p>You can use the form below to generate a video sitemap either for your own account or for a sample Brightcove account.</p>
+  
+    <fieldset class="bcls-fieldset">
+      <legend>Input</legend>
+  
+      <p>If you do not enter account information, a Brightcove sample account will be used.</p>
+  
+      <p>Account id:
+        <input id="account_id_input" type="text" value="" placeholder="1752604059001" />
+      </p>
+  
+      <p>Client id:
+        <input id="client_id_input" type="text" size="60" value="" placeholder="c5d0a622-5479-46d8-8d8a-5f034b943fab" />
+      </p>
+  
+      <p>Client secret:
+        <input id="client_secret_input" type="text" size="60" value="" placeholder="w7NQYu0vUloM4GYYy2SXAxrvyFpt8fwI35qAFZcS13-VIgs0itwKNsAwHOS80sOWKJ1BUwHIvSFG2I" />
+      </p>
+
+      <button class="bcls-button" id="makeMap">Generate the Sitemap</button>
+
+    </fieldset>
+  
+    <fieldset class="bcls-fieldset">
+      <legend>Output</legend>
+  
+      <p id="logger" style="color:rgb(237, 104, 38)">Waiting for input...</p>
+  
+      <p>Current API request</p>
+  
+      <pre>
+  <code id="apiRequest">api request will appear here...</code></pre>
+  
+      <p>Generated sitemap</p>
+      <textarea id="feedDisplay" style="width:95%;height:30em;"></textarea>
+    </fieldset>
+  </section>
+  <script  src="./script.js"></script>
+</body>
+</html>
